@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<link rel="stylesheet" href="primary.css" />
+<link rel="stylesheet" href="BootStrap/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="BootStrap/bootstrap/css/bootstrap-responsive.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="whatstrending.js" type="text/javascript"></script>
+<script src="BootStrap/bootstrap/js/bootstrap.js"></script>
+<title>What's Trending?</title>
+</head>
+
+<body>
+    <div class="hero-unit">
+        <h2>Twitter / Urban Dictionary MashUp</h2>
+        <div class="pull-left">
+            &nbsp;What's Trending?&nbsp;&nbsp;
+            <select id="location">
+                <option value="23424977">United States</option>
+                <option value="23424775">Canada</option>
+                <option value="23424975">United Kingdom</option>
+                <option value="23424900">Mexico</option>
+                <option value="2358820">Baltimore</option>
+                <option value="2442047">Los Angeles</option>
+                <option value="2367105">Boston</option>
+                <option value="2459115">New York City</option>
+                <option value="2450022">Miami</option>
+                <option value="23424908">Nigeria</option>
+                <option value="23424856">Japan</option>
+                <option value="2458833">New Orleans</option>
+                <option value="2357024">Atlanta</option>
+                <option value="23424738">U.A.E.</option>
+                <option value="23424803">Ireland</option>
+                <option value="2378426">Charlotte</option>
+                <option value="2451822">Milwaukee</option>
+                <option value="2427032">Indianapolis</option>
+                <option value="2471217">Philadelphia</option>
+                <option value="2391585">Detroit</option>
+                <option value="2466256">Orlando</option>
+                <option value="2473224">Pittsburgh</option>
+                <option value="2480894">Richmond</option>
+                <option value="2457170">Nashville</option>
+                <option value="2487956">San Francisco</option>
+                <option value="28218">Manchester</option>
+            </select>
+            <br />
+            <a href="mailto:rdwettlaufer@gmail.com" class="btn btn-primary"><i class="icon-heart"></i>&nbsp;&nbsp;Contact</a>
+        </div>
+    </div>
+<div id="top10Trending"></div>
+<div id="tweet"></div>
+<div id="accordion">
+</div>
+<div id="trendEntries">
+    <table id="trendEntry">
+        <thead>
+            <tr>
+                <th id="tableTitle" colspan="2">All Trends Loaded</th>
+            </tr>
+            <tr>
+                <th><a href="#" id="nameSort">Trend Name</a></th>
+                <th><a href="#" id="locationSort">Location</a></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<p class="clear" />
+    <div class="container pull-left">
+        <div class="row-fluid">
+            <div class="span10">
+                <div class="explanationHolder">
+                    <p class="about">
+                        <span class="explanationTitle">Well, what are we doing here?</span>
+                        The words in the title are the current top ten trending terms on <a href="http://twitter.com">twitter</a>, for whatever location you choose in the drop-down (by default we are using U.S.A.). Underneath are the results we get when we cross-reference <a href="http://www.urbandictionary.com">UrbanDictionary</a>. The original idea was to try and make sense of some of the random people, places, terms, and things that trend on <a href="http://twitter.com">twitter</a> throughout the day that might not exactly be in Merriam-Webster. The results can be funny, informative, random, useless (#hardtosplit), offensive, or a healthy mixture of them all. On the right-hand side, you'll see a table (not on mobile) that holds all the trends you've loaded in the session. You can click on "Location", or "Trend Name" to sort them descending/ascending alphabetically. Try loading different locations from the drop-down at the top and see what trends they share, and which ones are 'local'.
+                    </p>
+                    <p><a href="mailto:rdwettlaufer@gmail.com">-Robert Wettlaufer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
